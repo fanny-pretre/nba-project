@@ -11,6 +11,7 @@ const teams = [
     name: "Hawks",
     full_name: "Atlanta Hawks",
     abbreviation: "ATL",
+    png: "https://cdn.freebiesupply.com/images/thumbs/2x/atlanta-hawks-logo.png",
   },
   {
     id: 2,
@@ -20,7 +21,7 @@ const teams = [
     name: "Celtics",
     full_name: "Boston Celtics",
     abbreviation: "BOS",
-    png: "https://logos-world.net/wp-content/uploads/2020/05/Boston-Celtics-logo.png",
+    png: "https://cdn.freebiesupply.com/images/large/2x/boston-celtics-logo-transparent.png",
   },
   {
     id: 3,
@@ -30,6 +31,7 @@ const teams = [
     name: "Nets",
     full_name: "Brooklyn Nets",
     abbreviation: "BKN",
+    png: "https://logodownload.org/wp-content/uploads/2021/04/brooklyn-nets-logo-2.png",
   },
   {
     id: 4,
@@ -48,6 +50,7 @@ const teams = [
     name: "Bulls",
     full_name: "Chicago Bulls",
     abbreviation: "CHI",
+    png: "https://cdn.freebiesupply.com/images/large/2x/chicago-bulls-logo-transparent.png",
   },
   {
     id: 6,
@@ -57,6 +60,7 @@ const teams = [
     name: "Cavaliers",
     full_name: "Cleveland Cavaliers",
     abbreviation: "CLE",
+    png: "https://cdn.freebiesupply.com/images/large/2x/cleveland-cavaliers-logo-transparent.png",
   },
   {
     id: 7,
@@ -102,6 +106,7 @@ const teams = [
     name: "Rockets",
     full_name: "Houston Rockets",
     abbreviation: "HOU",
+    png: "https://cdn.freebiesupply.com/images/large/2x/houston-rockets-logo-transparent.png",
   },
   {
     id: 12,
@@ -147,6 +152,7 @@ const teams = [
     name: "Heat",
     full_name: "Miami Heat",
     abbreviation: "MIA",
+    png: "https://cdn.freebiesupply.com/images/large/2x/miami-heat-logo-transparent.png",
   },
   {
     id: 17,
