@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap");
+
+$primary-font: "Radio Canada", sans-serif;
+$secondary-font: "Quicksand", sans-serif;
+$primary-color: #000000;
+$second-color: #212121;
+$terciary-color: white;
+$color-4: #fa8320;
+
+* {
+  margin: 0;
+  --card-height: 300px;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.history-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: $primary-color;
+  box-sizing: border-box;
+  padding: 2rem 10rem;
+  .history-content {
+    background-color: $second-color;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 2rem;
+    h2 {
+      padding: 1rem;
+      text-align: left;
+      font-family: $primary-font;
+      color: $terciary-color;
+      text-transform: uppercase;
+    }
+    .history-card {
+      display: flex;
+      flex-direction: row;
+      height: 70vh;
+      .history-left {
+        width: 40%;
+        box-sizing: border-box;
+        position: relative;
+        padding: 2rem;
+        img {
+          height: 10%;
+        }
+        h3 {
+          margin: 2rem 0;
+          text-align: center;
+          background-color: $primary-color;
+          padding: 0.8rem;
+          font-family: $primary-font;
+          color: $terciary-color;
+          text-transform: uppercase;
+        }
+        .history-text {
+          font-family: $secondary-font;
+          color: $terciary-color;
+          font-weight: 700;
+          padding: 0 0.8rem;
+        }
+        .history-date {
+          position: absolute;
+          bottom: 5rem;
+          padding: 0 0.8rem;
+          font-family: $primary-font;
+          color: $terciary-color;
+          font-size: 8rem;
+        }
+      }
+      .history-right {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .history-image {
+        max-width: 90%;
+        max-height: 90%;
+      }
+    }
+  }
+}

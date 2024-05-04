@@ -1,0 +1,49 @@
+$primary-color: #000000;
+$second-color: #212121;
+$terciary-color: white;
+$color-4: #fa8320;
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  li {
+    list-style: none;
+    .button__svg__nav {
+      width: 3rem;
+    }
+  }
+}
+
+.stepper {
+  --circle: 2rem;
+
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  gap: 1rem;
+  .stepper li {
+    display: grid;
+    place-items: center;
+    font-family: sans-serif;
+    position: relative;
+  }
+}
+
+.stepper li::before {
+  content: " ";
+  display: grid;
+  place-content: center;
+  aspect-ratio: 1;
+  height: var(--circle);
+  box-sizing: border-box;
+  background: $primary-color;
+  color: var(--active-c);
+  border-radius: 50%;
+  font-family: monospace;
+  z-index: 1;
+}
+.stepper li.active::before {
+  background: $color-4;
+}
