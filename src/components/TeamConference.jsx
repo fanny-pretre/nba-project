@@ -1,12 +1,16 @@
+import { Link } from "react-router-dom";
+
 import TeamCard from "./TeamCard";
 
 function TeamConference({ teams }) {
   const getTeamsbyDivision = (chosenDivision) => {
     try {
-      return teams.filter((t) => t.division === chosenDivision);
+      return Array.from(teams.values()).filter(
+        (t) => t.division === chosenDivision
+      );
     } catch (error) {
       console.error(`An error did occur in ${this} : ${error}`);
-      return teams;
+      return Array.from(teams.values());
     }
   };
 
@@ -20,7 +24,9 @@ function TeamConference({ teams }) {
             {getTeamsbyDivision(division).map((team) => (
               <div className="team" key={team.id}>
                 <TeamCard team={team} />
-                <button> Know more</button>
+                <Link to={`/teamsDetails/${team.id}`}>
+                  <button> Know more </button>
+                </Link>
               </div>
             ))}
           </div>
@@ -34,7 +40,9 @@ function TeamConference({ teams }) {
             {getTeamsbyDivision(division).map((team) => (
               <div className="team" key={team.id}>
                 <TeamCard team={team} />
-                <button> Know more</button>
+                <Link to={`/teamsDetails/${team.id}`}>
+                  <button> Know more </button>
+                </Link>
               </div>
             ))}
           </div>

@@ -72,8 +72,14 @@ body {
               display: flex;
               align-items: center;
               height: 80%;
-              img {
+              gap: 1rem;
+              .team-image {
                 height: 100%;
+                width: 2.5rem;
+                img {
+                  height: 100%;
+                  width: 100%;
+                }
               }
             }
             button {
@@ -82,7 +88,7 @@ body {
               padding: 0.5rem;
               border-radius: 10%;
               height: 70%;
-              width: 25%;
+              width: 100%;
             }
           }
         }

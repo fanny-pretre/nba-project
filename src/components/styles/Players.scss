@@ -61,14 +61,22 @@ body {
           justify-content: center;
           align-items: end;
           perspective: 2500px;
+          .player-link {
+            position: absolute;
+            width: 100%;
+            height: 20vw;
+
+            z-index: 999;
+          }
           .wrapper {
+            box-sizing: border-box;
+            padding: 1rem;
             transition: all 0.5s;
             position: absolute;
             width: 100%;
             height: 20vw;
             z-index: -1;
             background-color: white;
-            padding: 1rem;
           }
           .title {
             width: 100%;
