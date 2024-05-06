@@ -47,11 +47,15 @@ export default function TeamsDetails() {
           </div>
           <div className="team-detail-right">
             <div className="team-detail-text">
-              <p> {fetchInfo(id)}</p>
+              <p> {fetchInfo(id).description}</p>
             </div>
             <div className="team-detail-info">
-              <p> Conference : {teamDetail.conference}</p>
-              <p> Division : {teamDetail.division}</p>
+              <p style={{ background: fetchInfo(id).color }}>
+                Conference : {teamDetail.conference}
+              </p>
+              <p style={{ background: fetchInfo(id).color }}>
+                Division : {teamDetail.division}
+              </p>
             </div>
           </div>
         </div>

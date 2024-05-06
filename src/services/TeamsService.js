@@ -1,3 +1,4 @@
+import APIKey from "../context/Context";
 //Ajout async pour signifier que fonction asynchrone
 export async function GetAllTeams() {
   try {
@@ -6,7 +7,7 @@ export async function GetAllTeams() {
       method: "GET",
       headers: {
         accept: "application/json",
-        Authorization: "",
+        Authorization: APIKey,
       },
     };
 

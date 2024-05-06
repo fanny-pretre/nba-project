@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap");
+
+$primary-font: "Radio Canada", sans-serif;
+$secondary-font: "Quicksand", sans-serif;
+$primary-color: #000000;
+$second-color: #212121;
+$terciary-color: white;
+$color-4: chocolate;
+
+* {
+  margin: 0;
+  --card-height: 300px;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color: $primary-color;
+  footer {
+    position: relative;
+    padding: 0.8rem 0;
+    background-color: $color-4;
+    color: black;
+    z-index: 2;
+    height: 8vh;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .social {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+  }
+  .copyright {
+    text-align: center;
+    font-family: $primary-font;
+    color: black;
+    margin-bottom: 0;
+  }
+}
+
+.social > a:hover {
+  opacity: 0.9;
+}

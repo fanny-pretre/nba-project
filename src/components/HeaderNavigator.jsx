@@ -69,7 +69,7 @@ const HeaderNavigator = () => {
   return (
     <div>
       {/* Joueur*/}
-      <div className="section-container">
+      <div className="section-container" id="header">
         <div className="section" style={{ background: playerToDisplay.color }}>
           <h1 className="h1">{playerToDisplay.name}</h1>
           <div className="player-image ">

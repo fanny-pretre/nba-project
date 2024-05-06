@@ -1,3 +1,5 @@
+import APIKey from "../context/Context";
+
 export async function GetPlayerById(id) {
   try {
     //Création d'un header
@@ -5,7 +7,7 @@ export async function GetPlayerById(id) {
       method: "GET",
       headers: {
         accept: "application/json",
-        Authorization: "",
+        Authorization: APIKey,
       },
     };
 

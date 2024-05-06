@@ -15,7 +15,7 @@ function TeamList() {
   }, []);
 
   return (
-    <div className="team-section">
+    <div className="team-section" id="team">
       <div className="team-content">
         <h2>LES EQUIPES</h2>
         {teams && <TeamConference teams={teams} />}

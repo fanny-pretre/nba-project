@@ -144,7 +144,7 @@ function HistoryList() {
   const nPages = Math.ceil(historyEvents.length / recordsPerPage);
 
   return (
-    <div className="history-section">
+    <div className="history-section" id="history">
       <div className="history-content">
         <h2>Histoire de la NBA</h2>
         <div>

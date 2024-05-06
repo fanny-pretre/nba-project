@@ -25,7 +25,7 @@ function PlayerList() {
   };
 
   return (
-    <div className="player-section">
+    <div className="player-section" id="player">
       <div className="player-content">
         <h2>LES JOUEURS ICONIQUES </h2>
         <div className="player-carroussel">
@@ -42,7 +42,7 @@ function PlayerList() {
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                d="M15.75 19.5 8.25 12l7.5-7.5"
               />
             </svg>
             {pagePlayers.map(([key, player]) => (
@@ -60,7 +60,7 @@ function PlayerList() {
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                d="m8.25 4.5 7.5 7.5-7.5 7.5"
               />
             </svg>
           </div>
